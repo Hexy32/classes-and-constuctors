@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --accent: #cc3333;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  width: 100%;
+  height: max-content;
+  background-color: #222;
+  padding: 12px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: #0000006f 0px 0px 10px 2px;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Signika Negative', sans-serif;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  background: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: x-large;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  height: max-content;
+  width: 57rem;
+  margin: 50px auto;
+  position: relative;
+  background-color: #efefef;
+  box-shadow: #00000046 0px 0px 5px 2px;
+}
+
+.side-section {
+  --height: 35rem;
+  --width: 20rem;
+  background-color: var(--accent);
+  color: white;
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  padding-left: 4rem;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.section-divider {
+  transform: rotate(-90deg);
+  width: var(--height);
+  margin-left: var(--width);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-divider:last-child {
+  fill: var(--accent);
+}
+
+.dark-button,
+.light-button {
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50rem;
+  background: none;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.light-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark-button:hover {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+
+.light-button {
+  border: solid white 2px;
+  color: white;
+}
+
+.dark-button {
+  border: solid black 2px;
+  color: black;
+}
+
+.side-section-2 {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  width: 20rem;
+  height: 100%;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+form .dark-button {
+  margin-top: 30px;
+}
+
+input {
+  width: 15rem;
+  height: 2.5rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+form div {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+form div > * {
+  width: 50%;
+}

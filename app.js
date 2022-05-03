@@ -1,5 +1,3 @@
-var fs = require('fs')
+import { saveData } from './saveData.js'
 
-let hello = fs.readFileSync('readMe.txt', 'utf-8')
-
-console.log(hello)
+saveData('test')
